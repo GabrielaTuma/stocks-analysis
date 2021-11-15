@@ -48,44 +48,52 @@ While refactoring the code from Module 2 to achieve deliverable 1, several steps
 
 The original code uses two nested loops:
 
-<kbd>
+
   <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/01a111b9ca6f424ff7eda19ca26341efefff7f95/Resources/AllStockAnalysis.png">
-</kbd>  &nbsp;
-</p>
 
-The refactored code separates the loops, the first retrieves the information:
+  <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/6b434e7c4fc1455931f606fff3a75ef3d0ea39d7/Resources/AllStocksAnalysis2.png">
 
-<kbd>
-  <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/01a111b9ca6f424ff7eda19ca26341efefff7f95/Resources/AllStocksAnalysisRefactored1.png">
-</kbd>  &nbsp;
-</p>
 
-And the second populates the summary per ticker:
+---
 
-<kbd>
-  <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/01a111b9ca6f424ff7eda19ca26341efefff7f95/Resources/AllStocksAnalysisRefactored2.png">
-</kbd>  &nbsp;
-</p>
+The refactored code separates the loops, the **first initiates the variables** at zero:
+
+  <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/6b434e7c4fc1455931f606fff3a75ef3d0ea39d7/Resources/AllStocksAnalysisRefactored1.png">
+
+
+The **second retrieves the information using arrays**:
+
+  <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/6b434e7c4fc1455931f606fff3a75ef3d0ea39d7/Resources/AllStocksAnalysisRefactored2.png">
+
+
+And the **third populates the summary per ticker**:
+
+  <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/6b434e7c4fc1455931f606fff3a75ef3d0ea39d7/Resources/AllStocksAnalysisRefactored3.png">
+
+
+
+
+-----
+
 
 The outcomes from both VBA scripts are the same: 
 
-#### Outcome for 2017 (refactored code) 
+#### Outcome for 2017 (print from refactored code) 
 <kbd>
   <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/a61ec8c980234f2bd876730c9ac8dd4a66a680be/Resources/VBA_Challenge_2017.png">
 </kbd>  &nbsp;
 </p>
 
 
-#### Outcome for 2018 (refactored code)
+#### Outcome for 2018 (print from refactored code)
 <kbd>
   <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/a61ec8c980234f2bd876730c9ac8dd4a66a680be/Resources/VBA_Challenge_2018.png">
 </kbd>  &nbsp;
 </p>
 
+-----
 
-The original code uses two nested loops and looks concise compared to the refactored one using arrays, but just beacause there's less steps and reading to do doesn't mean it's more efficient, the nested loops created an unnecessary complexity to the code that we can observe here:  
-
-
+The original code uses two nested loops and looks concise compared to the refactored one using arrays, but just because there's less steps and reading to do doesn't mean it's more efficient, the nested loops created an unnecessary complexity to the code that can be observed here:  
 
 
 #### Two nested loops  
@@ -106,29 +114,23 @@ The runtime for the refactored code is around 4.5 times faster than the previous
 
 ## Summary
 
-Deliverable 1 made evident some of the advantages of refactoring code
+Deliverable 1 made evident some of the advantages of refactoring code, but this restructuring process has up and downsides:
 
 Advantages of refactoring code:
-How do these pros and cons apply to refactoring the original VBA script?
-Helps Programming Faster
-Improves the Design of Software
-Refactoring Makes Software Easier to Understand
-Refactoring Helps Finding Bugs
-Helps Programming Faster
+- Programming Faster
+- Improves the design of software / easier to understand
+- Helps finding bugs
 
 
-Disadvantages of refactoring code
+Disadvantages of refactoring code:
 - Requires money
 - Requires time
 - Can be risky when application is big
 - Can be risky when developers do not understand much about the code
 
+The process of refactoring can be compared to a cell phone upgrade. Over time, it's normal that our phones will slow down and underperform compared to new ones, but even though new and better models are launched every few months, we only buy a new device when there's a necessity and available resources to do so, which usually happens every few years instead of months. 
 
-It's like picking the time to change an outdated cell phone, we usually consider if the benefits are going to be worth the price for the upgrade. Everything depends on the necessity and resources and impact of the improvements 
+Like a phone upgrade, or any kind of investment, refactoring requires time and resources, we have to consider whether the benefits are going to be worth the price paid, and that depends on the real necessities, resources available and the impact of the improvements. 
 
-
-<kbd>
-  <img src="https://github.com/GabrielaTuma/stocks-analysis/blob/a61ec8c980234f2bd876730c9ac8dd4a66a680be/Resources/year_question.png">
-</kbd>  &nbsp;
-</p>
+For such a small VBA script (like the one analyzed in this project) the improvements in time weren't really necessary to begin with, both results were displayed in less than 1 second. However, since the main goal of this challenge was to learn more about refactoring and VBA coding, the time and resources were in fact well applied and the improvement was worth it. 
 
